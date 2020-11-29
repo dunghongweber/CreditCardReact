@@ -1,0 +1,26 @@
+import React, { Component } from "react";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import AddCard from "./components/AddCard";
+import CardDetails from "./components/CardDetails";
+
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <NavBar></NavBar>
+          <Switch>
+            <Route exact path="/" component={Home}></Route>
+            <Route path="/add" component={AddCard}></Route>
+            <Route path="/:card_id" component={CardDetails}></Route>
+          </Switch>
+        </div>
+      </BrowserRouter>
+    );
+  }
+}
+
+export default App;
