@@ -1,16 +1,26 @@
 # React_CardsApp
 
-This is a simple credit cards management app. It is built using React JS.
-
-you must have the latest and stable NodeJs on your PC to run this
-
+This is a simple credit cards management app. It is built using React JS. You must have the latest and stable NodeJs on your PC to run this
 When clone this repository to your development PC, run the below command install all the necessary packages for the app.
-
 > npm init
 
 To start and run the app, go to card-manage directory and run
-
 > npm start
+
+The API that this app access to can be found at https://github.com/dunghongweber/CreditCardAPI
+or can be accessed directly on Heroku by url https://dh-react-card.herokuapp.com/all-cards
+there are 4 API calls
+
+1. Get all cards (GET) /all-cards
+
+2. Get a card details (GET) /detail/:id
+
+3. Create a new card (POST) /new
+
+4. Delete a card (DELETE) /delete/:id
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
